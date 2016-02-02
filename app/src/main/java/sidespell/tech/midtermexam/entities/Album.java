@@ -1,7 +1,5 @@
 package sidespell.tech.midtermexam.entities;
 
-import android.graphics.Bitmap;
-
 /**
  * Created by daleg on 02/02/2016.
  */
@@ -9,22 +7,15 @@ public class Album {
 
     private String mName;
     private String mArtist;
-    private String mUrl;
-    private String mThumbnailSrc;
-
-    private int mId;
-    private int mLimit;
+    private String mImgSize;
 
     public Album() {
     }
 
-    public Album(String mName, String mArtist, String mUrl, String mThumbnailSrc, int mId, int mLimit, Bitmap mAlbumThumbnail) {
+    public Album(String mName, String mArtist, String mImgSize) {
         this.mName = mName;
         this.mArtist = mArtist;
-        this.mUrl = mUrl;
-        this.mThumbnailSrc = mThumbnailSrc;
-        this.mId = mId;
-        this.mLimit = mLimit;
+        this.mImgSize = mImgSize;
     }
 
     public String getmName() {
@@ -45,41 +36,12 @@ public class Album {
         return this;
     }
 
-    public String getmUrl() {
-        return mUrl;
+    public String getmImgSize() {
+        return mImgSize;
     }
 
-    public Album setmUrl(String url) {
-        mUrl = url;
+    public Album setmImgSize(String thumbnailSrc) {
+        mImgSize = thumbnailSrc;
         return this;
     }
-
-    public String getmThumbnailSrc() {
-        return mThumbnailSrc;
-    }
-
-
-    public Album setmThumbnailStc(String url) {
-        mUrl = url;
-        return this;
-    }
-
-    public int getmId() {
-        return mId;
-    }
-
-    public Album setmId(int id) {
-        mId = id;
-        return this;
-    }
-
-    public int getmLimit() {
-        return mLimit;
-    }
-
-    public Album setmLimit(int limit) {
-        mLimit = limit;
-        return this;
-    }
-
 }
